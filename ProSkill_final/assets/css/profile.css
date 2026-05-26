@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    min-height: 100vh;
+
+    background:
+    radial-gradient(circle at top, rgba(210,171,110,0.12), transparent 30%),
+    linear-gradient(
+        135deg,
+        #614f33 0%,
+        #231e14 30%,
+        #0b0f1a 100%
+    );
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.wrapper{
+    width: 100%;
+    overflow: hidden;
+}
+
+.container{
+    width: 1400px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+
+header {
+    padding: 30px 0;
+}
+
+header .container,
+header.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 85px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    list-style: none;
+}
+
+nav ul li a {
+    color: rgba(255,255,255,0.78);
+
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #d2ab6e;
+}
+
+/* glass button */
+
+.header-btn a {
+    padding: 12px 26px;
+
+    border-radius: 14px;
+
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    transition: 0.3s ease;
+}
+
+.header-btn a:hover {
+    background: rgba(255,255,255,0.12);
+
+    border-color: rgba(210,171,110,0.4);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.25);
+}
+/* PROFILE */
+
+.profile-hero{
+    margin-top: 30px;
+
+    padding: 45px;
+
+    border-radius: 32px;
+
+    background: rgba(26,31,46,0.55);
+    backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,0.45);
+}
+
+.profile-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.profile-user{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.avatar{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 3px solid rgba(210,171,110,0.4);
+
+    box-shadow:
+    0 0 25px rgba(210,171,110,0.15);
+}
+
+.profile-user h1{
+    font-size: 42px;
+    margin-bottom: 10px;
+
+    background: linear-gradient(180deg, #fff, #d2ab6e);
+    -webkit-text-fill-color: transparent;
+}
+
+.role{
+    color: rgba(255,255,255,0.6);
+    font-size: 15px;
+}
+
+.mini-stats{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.mini-card{
+    min-width: 150px;
+    padding: 22px;
+
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.mini-card span{
+    display: block;
+    color: #d2ab6e;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.mini-card p{
+    color: rgba(255,255,255,0.6);
+    font-size: 14px;
+}
+
+/* SECTION */
+
+.section-title{
+    margin-top: 70px;
+    margin-bottom: 25px;
+
+    font-size: 32px;
+}
+
+/* CARDS */
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 25px;
+}
+
+.card{
+    padding: 30px;
+
+    border-radius: 28px;
+
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition: 0.35s ease;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+
+    border-color: rgba(210,171,110,0.35);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,0.35);
+}
+
+.card h3{
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+
+.card p{
+    color: rgba(255,255,255,0.65);
+    margin-bottom: 12px;
+}
+
+.progress{
+    width: 100%;
+    height: 12px;
+
+    border-radius: 30px;
+
+    background: rgba(255,255,255,0.08);
+
+    overflow: hidden;
+
+    margin-bottom: 20px;
+}
+
+.progress-bar{
+    height: 100%;
+
+    border-radius: 30px;
+
+    background: linear-gradient(90deg,#d2ab6e,#f4d08a);
+}
+
+.card button{
+    width: 100%;
+    padding: 14px;
+
+    border: none;
+    border-radius: 14px;
+
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255,255,255,0.12);
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.card button:hover{
+    background: rgba(255,255,255,0.14);
+
+    border-color: rgba(210,171,110,0.4);
+}
+
+/* PROGRESS */
+
+.progress-wrapper{
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.circle{
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+
+    background:
+    conic-gradient(
+        #d2ab6e 0% 75%,
+        rgba(255,255,255,0.08) 75% 100%
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.circle::before{
+    content: "";
+
+    position: absolute;
+
+    width: 140px;
+    height: 140px;
+
+    border-radius: 50%;
+
+    background: #131722;
+}
+
+.circle span{
+    position: relative;
+    z-index: 2;
+
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.progress-text{
+    max-width: 450px;
+}
+
+.progress-text h3{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.progress-text p{
+    color: rgba(255,255,255,0.65);
+    line-height: 1.7;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top: 120px;
+
+    background: rgba(8,10,18,0.65);
+    backdrop-filter: blur(12px);
+
+    border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.footer-content{
+    padding: 70px 0 50px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.footer-block{
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-brand img{
+    width: 90px;
+    margin-bottom: 18px;
+}
+
+.footer-brand p{
+    max-width: 320px;
+    line-height: 1.8;
+}
+
+.footer-block h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+
+    color: #d2ab6e;
+}
+
+.footer-block p,
+.footer-block li,
+.footer-block a{
+    color: rgba(255,255,255,0.65);
+
+    line-height: 2;
+    list-style: none;
+
+    transition: 0.3s ease;
+}
+
+.footer-block a:hover{
+    color: #d2ab6e;
+}
+
+.footer-bottom{
+    padding: 22px 0;
+
+    text-align: center;
+
+    border-top: 1px solid rgba(255,255,255,0.05);
+
+    color: rgba(255,255,255,0.35);
+
+    font-size: 14px;
+}

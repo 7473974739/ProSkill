@@ -1,0 +1,120 @@
+/* ================= AUTH PAGE ================= */
+
+.auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.auth-card {
+  width: 420px;
+  padding: 40px;
+  border-radius: 20px;
+
+  background: rgba(26, 31, 46, 0.75);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(210, 171, 110, 0.2);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+
+  text-align: center;
+}
+
+.auth-card h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  background: linear-gradient(180deg, #fff, #d2ab6e);
+  -webkit-text-fill-color: transparent;
+}
+
+.auth-card p {
+  color: #aaa;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+/* поля */
+.auth-card input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+
+  background: rgba(255,255,255,0.03);
+  color: #fff;
+
+  outline: none;
+}
+
+.auth-card input:focus {
+  border-color: #d2ab6e;
+}
+
+
+/* ссылки */
+.auth-links {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.auth-links a {
+  color: #d2ab6e;
+  margin-left: 5px;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  background: linear-gradient(
+    135deg,
+    #614f33 1%,
+    #231e14 20%,
+    #0b0f1a 100%  /* почти чёрный */
+  );
+
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+.auth-btn {
+  display: block;
+  width: 60%;              /* уже */
+  margin: 20px auto 0;     /* центр */
+
+  padding: 12px 18px;
+
+  border: 1px solid #614f33;
+  border-radius: 14px;
+
+  background:  #614f3386;
+  backdrop-filter: blur(12px);
+
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+.auth-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(210, 171, 110, 0.6);
+
+  transform: translateY(-2px);
+
+  box-shadow: 
+    0 12px 35px rgba(0, 0, 0, 0.45),
+    0 0 20px rgba(210, 171, 110, 0.25);
+}
+.auth-btn:active {
+  transform: translateY(0px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
